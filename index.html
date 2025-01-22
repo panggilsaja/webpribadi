@@ -1,0 +1,147 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Beranda - Aplikasi Pemesanan Tiket Wisata Online
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="font-roboto">
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+   <div class="text-2xl font-bold">
+    WisataGo
+   </div>
+   <nav>
+    <ul class="flex space-x-4">
+     <li>
+      <a class="hover:underline" href="index.html">
+       Beranda
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="tiket.html">
+       Tiket
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="jadwal.html">
+       Jadwal
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="profil.html">
+       Profil
+      </a>
+     </li>
+     <li>
+      <a class="text-red-600" href="login.html">
+       <i class="fas fa-sign-out-alt mr-2">
+       </i>
+       Logout
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <section class="bg-gray-200 p-8">
+   <div class="container mx-auto">
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+     <img alt="Promotional banner with scenic tourist destinations" class="w-full h-64 object-cover rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/QQNvp73b3GpGIxMk4PEPSCCvjDf31UxeoVBrgiMyPLHxvEBUA.jpg" width="1200"/>
+    </div>
+   </div>
+  </section>
+  <section class="p-8">
+   <div class="container mx-auto">
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+     <h2 class="text-2xl font-bold mb-4">
+      Cari Tiket Wisata
+     </h2>
+     <form class="space-y-4">
+      <div>
+       <label class="block text-sm font-medium text-gray-700" for="destinasi">
+        Destinasi
+       </label>
+       <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="destinasi" type="text"/>
+      </div>
+      <div>
+       <label class="block text-sm font-medium text-gray-700" for="tanggal">
+        Tanggal
+       </label>
+       <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="tanggal" type="date"/>
+      </div>
+      <div>
+       <label class="block text-sm font-medium text-gray-700" for="jumlah">
+        Jumlah Tiket
+       </label>
+       <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="jumlah" type="number"/>
+      </div>
+      <button class="w-full bg-blue-600 text-white p-2 rounded-md" type="submit">
+       Cari Tiket
+      </button>
+     </form>
+    </div>
+   </div>
+  </section>
+  <section class="p-8 bg-gray-100">
+   <div class="container mx-auto">
+    <h2 class="text-2xl font-bold mb-4">
+     Tiket Populer
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="Popular tourist destination with scenic view of a beach" class="w-full h-48 object-cover rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/TGbdLQTefqsXiUgQDcmRczjeXJzJEk5tiDhbolHmLg0WfSEQB.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-4">
+        Pantai Kuta
+      </h3>
+      <p class="text-gray-600">
+       Rp 100.000
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="Popular tourist destination with scenic view of a mountain" class="w-full h-48 object-cover rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/szlRlVp3HPrAE1Xtzs8Sj25snLvObqRKfx6wcSdnDBg2XiAKA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-4">
+        Pulau Komodo
+      </h3>
+      <p class="text-gray-600">
+       Rp 150.000
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="Popular tourist destination with scenic view of a forest" class="w-full h-48 object-cover rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/cmnJ3wn41uIoENHGI538RP5Qy8JzWIfZZ9zYWSCoIDm3XiAKA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-4">
+        Gunung Rinjani
+      </h3>
+      <p class="text-gray-600">
+       Rp 200.000
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="bg-blue-600 text-white p-4">
+   <div class="container mx-auto">
+    <ul class="flex space-x-4 justify-center">
+     <li>
+      <a class="hover:underline" href="index.html">
+       Tentang Kami
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="profil.html">
+       Kontak
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="index.html">
+       Kebijakan Privasi
+      </a>
+     </li>
+    </ul>
+   </div>
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,151 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Aplikasi Pemesanan Tiket Wisata Online
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="font-roboto">
+ 
+  <!-- Halaman Pemesanan -->
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+   <div class="text-2xl font-bold">
+    WisataGo
+   </div>
+   <nav>
+    <ul class="flex space-x-4">
+     <li>
+      <a class="hover:underline" href="index.html">
+       Beranda
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="tiket.html">
+       Tiket
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="jadwal.html">
+       Jadwal
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="profil.html">
+       Profil
+      </a>
+     </li>
+     <li>
+        <a class="text-red-600" href="login.html">
+            <i class="fas fa-sign-out-alt mr-2"></i>
+            Logout
+        </a>
+    </ul>
+   </nav>
+  </header>
+  <section class="p-8">
+   <div class="container mx-auto">
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+     <h2 class="text-2xl font-bold mb-4">
+      Formulir Pemesanan
+     </h2>
+     <form class="space-y-4">
+      <div>
+       <label class="block text-sm font-medium text-gray-700" for="destinasi">
+        Destinasi Wisata
+       </label>
+       <select class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="destinasi">
+        <option>
+         Pilih Destinasi
+        </option>
+        <option>
+         Destinasi 1
+        </option>
+        <option>
+         Destinasi 2
+        </option>
+        <option>
+         Destinasi 3
+        </option>
+       </select>
+      </div>
+      <div>
+       <label class="block text-sm font-medium text-gray-700" for="tanggal">
+        Tanggal Kunjungan
+       </label>
+       <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="tanggal" type="date"/>
+      </div>
+      <div>
+       <label class="block text-sm font-medium text-gray-700" for="jumlah">
+        Jumlah Tiket
+       </label>
+       <select class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="jumlah">
+        <option>
+         Pilih Jumlah
+        </option>
+        <option>
+         1
+        </option>
+        <option>
+         2
+        </option>
+        <option>
+         3
+        </option>
+       </select>
+      </div>
+      <div>
+       <label class="block text-sm font-medium text-gray-700" for="pembayaran">
+        Metode Pembayaran
+       </label>
+       <select class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="pembayaran">
+        <option>
+         Pilih Metode Pembayaran
+        </option>
+        <option>
+         Kartu Kredit
+        </option>
+        <option>
+         Transfer Bank
+        </option>
+        <option>
+         e-Wallet
+        </option>
+       </select>
+      </div>
+      <button class="w-full bg-blue-600 text-white p-2 rounded-md" type="submit">
+       <a href="jadwal.html">
+        Konfirmasi Pesanan
+       </a>
+      </button>
+     </form>
+    </div>
+   </div>
+  </section>
+  <footer class="bg-blue-600 text-white p-4">
+   <div class="container mx-auto">
+    <ul class="flex space-x-4 justify-center">
+     <li>
+      <a class="hover:underline" href="index.html">
+       Tentang Kami
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="profil.html">
+       Kontak
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="index.html">
+       Kebijakan Privasi
+      </a>
+     </li>
+    </ul>
+   </div>
+  </footer>
+ </body>
+</html>

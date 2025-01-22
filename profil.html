@@ -1,0 +1,123 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Aplikasi Pemesanan Tiket Wisata Online - Profil
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="font-roboto">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+   <div class="text-2xl font-bold">
+    WisataGo
+   </div>
+   <nav>
+    <ul class="flex space-x-4">
+     <li>
+      <a class="hover:underline" href="index.html">
+       Beranda
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="tiket.html">
+       Tiket
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="jadwal.html">
+       Jadwal
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="profil.html">
+       Profil
+      </a>
+     </li>
+     <li>
+        <a class="text-red-600" href="login.html">
+            <i class="fas fa-sign-out-alt mr-2"></i>
+            Logout
+        </a>
+    </ul>
+   </nav>
+  </header>
+  <!-- Profil Section -->
+  <section class="p-8">
+   <div class="container mx-auto">
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+     <h2 class="text-2xl font-bold mb-4">
+      Profil Pengguna
+     </h2>
+     <div class="flex flex-col md:flex-row items-center md:items-start">
+      <img alt="User profile picture" class="w-32 h-32 rounded-full object-cover" height="128" src="mitha.jpeg" width="128"/>
+      <div class="md:ml-6 mt-4 md:mt-0">
+       <h3 class="text-xl font-bold">
+        Noerma Yuwana Pramitha
+       </h3>
+       <p class="text-gray-600">
+        mitha@gmail.com
+       </p>
+       <p class="text-gray-600">
+        08155109290
+       </p>
+      </div>
+     </div>
+     <div class="mt-6">
+      <h3 class="text-xl font-bold mb-4">
+       Ubah Profil
+      </h3>
+      <form class="space-y-4">
+       <div>
+        <label class="block text-sm font-medium text-gray-700" for="nama">
+         Nama Lengkap
+        </label>
+        <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="nama" type="text" value=" Noerma Yuwana Pramitha"/>
+       </div>
+       <div>
+        <label class="block text-sm font-medium text-gray-700" for="email">
+         E-mail
+        </label>
+        <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="email" type="email" value="mitha@gmail.com"/>
+       </div>
+       <div>
+        <label class="block text-sm font-medium text-gray-700" for="phone">
+         Nomor Telepon
+        </label>
+        <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="phone" type="tel" value=" 08155109290"/>
+       </div>
+       <button class="w-full bg-blue-600 text-white p-2 rounded-md" type="submit">
+        Simpan Perubahan
+       </button>
+      </form>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="bg-blue-600 text-white p-4">
+   <div class="container mx-auto">
+    <ul class="flex space-x-4 justify-center">
+     <li>
+      <a class="hover:underline" href="index.html">
+       Tentang Kami
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="profil.html">
+       Kontak
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline" href="index.html">
+       Kebijakan Privasi
+      </a>
+     </li>
+    </ul>
+   </div>
+  </footer>
+ </body>
+</html>
