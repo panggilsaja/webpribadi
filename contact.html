@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hubungi Kami</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+    </nav>
+    <main>
+        <h2>Hubungi Kami</h2>
+        <h3>Kami siap melayani anda</h3>
+        <form action="process_contact.php" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <input type="submit" value="Kirim">
+            <input type="submit" value="Batal">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Rumah Impian. Hak Cipta dilindungi</p>
+    </footer>
+</body>
+</html>

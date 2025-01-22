@@ -1,57 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Programming rumah vina</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="wrapper">
-        <div class="logo"><a href="">4ul4 V1n4</a></div>
-        <div class="menu">
-          <ul>
-            <li><a href="Info Pribadi.html">Home</a>></li>
-            <li><a href="#About">About</a>></li>
-            <li><a href="contac.html">Contact</a></li>
-            <li><a href="" class="tbl-biru">Sign up</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="wrapper">
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Vina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+        <h1>Rumah Impian</h1>
+    </header>
+    
+    <center><button onclick="changeBackgroundColor()">Tekan</button></center>
 
-      <!--untuk About-->
-      <selection id="About">
-        <div class="kolom">
-          <p class="deskripsi">About Me</p>
-          <h2>About Me</h2>
-          <p>
-            I am Ni'mah aula vina,I come from plakpak,I Study at Universitas
-            Bahaudin Muhdhari Information Systems Study Program, third
-            semester.Well here I have a little story hii.... this third semester
-            I had an internship experience at Elysia Aestetica for two and a
-            half months. There, my friends and I worked in the admin section,
-            That is inputting data , editing, printing, and selling
-            products.Elysia Aestetica has three branches, namely in Sampang,
-            Surabaya and Malang. The center of Elysia Aestetica is in Pamekasan.
-          </p>
-          <p>
-            and i have big dream dream, My biggest dream since I was little was
-            to become a doctor it turns out that god destined me to go to
-            callege majoring in technology maybe I can change may big dream, who
-            initially wanted to be a doctor and now my biggest dream is to have
-            a company , have a brand,and i have to reach that target get used to
-            the three w's : hard work work smart work sincerely chayo2 never
-            give up
-          </p>
-          <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
-        </div>
-        <img
-          src="https://img.freepik.com/premium-vector/illustration-post_498740-21087.jpg?ga=GA1.1.394072828.1731253218&semt=ais_hybrid"
-        />
-      </selection>
-    </div>
-  </body>
+    <main>
+        <section id="about">
+            <h2>SELAMAT DATANG DI RUMAH KAMI</h2>
+            <img src="https://img.freepik.com/premium-photo/3d-rendering-modern-house-design_712957-113.jpg?ga=GA1.1.244151057.1731751266&semt=ais_hybrid"  class="profile-pic">
+            <h3>🏡 RUMAH MEWAH MODERN – LOKASI PREMIUM & SIAP HUNI! 🏡</h3>
+            <p>✨ Hunian Nyaman, Mewah, dan Strategis! ✨</p>
+        <h4>💎 Spesifikasi Rumah:</h4>
+        <ul>
+            <li>✔ Luas Tanah: 200 m² | Luas Bangunan: 150 m²</li>
+            <li>✔ Kamar Tidur: 3 + 1 (kamar pembantu)</li>
+           <li>✔ Kamar Mandi: 3 – dilengkapi shower & water heater</li> 
+            <li>✔ Ruang Tamu & Keluarga: Luas, elegan, pencahayaan alami</li>
+          <li>✔ Dapur Modern: Kitchen set premium, meja granit, dan peralatan lengkap</li>
+           <li> ✔ Taman Asri: Halaman depan & belakang dengan area BBQ</li>
+           <li>✔ Garasi: 2 mobil + carport</li>
+            <li>✔ Fasilitas: Smart Home System, CCTV, AC di setiap ruangan</li>
+        </ul>
+            <h5>📍 KEUNGGULAN LOKASI:</h5>
+           <ul>
+            <li> ✅ 5 Menit ke Pusat Kota – Dekat dengan mall, sekolah, dan rumah sakit
+            ✅ Akses Mudah – Dekat tol, transportasi umum, dan fasilitas publik
+            ✅ Lingkungan Eksklusif – Keamanan 24 jam, one gate system, nyaman & tenang
+            </li>
+    </ul>
+           
+        </section>
+        <section id="crud">
+            <h2>Daftar Rumah</h2>
+            <form id="houseForm">
+                <input type="text" id="houseName" placeholder="Nama Rumah" required>
+                <input type="text" id="housePrice" placeholder="Harga Rumah" required>
+                <button type="submit">Tambah Rumah</button>
+                <button>Hapus</button>
+            </form>
+            <ul id="houseList"></ul>
+        </section>
+    </main>
+    
+    <script>
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = document.body.style.backgroundColor === 'lightblue' ? 'white' : 'lightblue';
+        }
+
+        function addHouse() {
+            let houseName = document.getElementById("houseName").value;
+            if (houseName) {
+                let ul = document.getElementById("house-list");
+                let li = document.createElement("li");
+                li.textContent = houseName;
+                
+                let editButton = document.createElement("button");
+                editButton.textContent = "Edit";
+                editButton.onclick = function() {
+                    let newName = prompt("Ubah nama rumah:", houseName);
+                    if (newName) {
+                        li.firstChild.textContent = newName;
+                    }
+                };
+                
+                let deleteButton = document.createElement("button");
+                deleteButton.textContent = "Hapus";
+                deleteButton.onclick = function() {
+                    ul.removeChild(li);
+                };
+                
+                li.appendChild(editButton);
+                li.appendChild(deleteButton);
+                ul.appendChild(li);
+                document.getElementById("houseName").value = "";
+            }
+        }
+        
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Rumah Impian. Hak Cipta Dilindungi. </p>
+    </footer>
+</body>
 </html>
