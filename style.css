@@ -1,0 +1,233 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.wrapper {
+width: 1100px;
+margin: auto;
+position: relative;
+}
+
+.logo{
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #001d84;
+}
+
+.menu {
+    float: right;
+}
+.menu li a:hover{
+    color: #e50882;
+}
+
+nav {
+width: 100%;
+margin: auto;
+display: flex;
+line-height: 80px;
+position: sticky;
+position: -webkit-sticky;
+top: 0;
+background: #ffffff;
+z-index: 1;
+border-bottom: 1px solid #001d84;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding : 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+   text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.kolom.deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #001d84;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #001d84;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-biru{
+    background: #325786;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru :hover{
+    background: #e50882;
+    text-decoration: none;
+}
+
+a.tbl-pink {
+    background: #3114da;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-pink:hover {
+    background: #ec24c1;
+    text-decoration: none;
+    transform: background 1.3s;
+}
+
+p{
+    margin: 10px 0px 10px 0px;
+    padding:10px 0px 10px 0px ;
+}
+
+#contac{
+    background: #dedede;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section{
+    width: 20%;
+    margin: 0 auto;
+}
+.footer-section a{
+    color: black;
+}
+.footer-section a:hover{
+    color: rgb(248, 247, 247);
+    background-color: rgb(51, 72, 123);
+}
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #325786;
+    width: 100%;
+    line-height: 50px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form input[type="submit"] {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper{
+        width: 90%;
+    }
+    
+    .logo a {
+        display: block ;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+    nav .menu ul li {
+        display: inline;
+        float: none;
+    }
+
+    section{
+        display: block;
+    }
+    section img {
+        display: block;
+    }
+}
